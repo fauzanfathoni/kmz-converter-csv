@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KML to CSV Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>KML to CSV Converter</h1>
+    <p class="subtitle">Drop here to convert file</p>
+    <p class="powered-by">
+      Powered by <a href="#">Ozan</a>
+    </p>
+
+    <div class="upload-box">
+      <div class="upload-area" id="upload-area">
+        <input type="file" id="file-input" accept=".kml,.kmz" hidden />
+        <p id="upload-text"><br>*Drop or upload your file here*</p>
+      </div>
+
+      <p class="terms">
+        *By uploading your files or using our service you agree with our
+        <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+      </p>
+
+      <div class="action-bar">
+        <button class="convert-btn">CONVERT</button>
+      </div>
+    </div>
+
+    <div id="preview-table" class="csv-preview"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
